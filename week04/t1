@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int n;
+	cout << "Enter a number between 5 and 20-";
+	cin >> n;
+
+	switch (n % 2) {
+
+	case 0: cout << "Even";
+		break;
+	case 1: cout << "Odd";
+		break;
+
+	default: cout << "Error";
+
+	}
+	system("PAUSE");
+    return 0;
+}
