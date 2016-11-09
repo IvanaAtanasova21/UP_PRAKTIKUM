@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int firstnumber;
+	cout << "First number=" << ' ';
+	cin >> firstnumber;
+	int secondnumber;
+	cout << "Second number=" << ' ';
+	cin >> secondnumber;
+	int result = 1;
+
+	for (int i = firstnumber; i < secondnumber; i++) {
+		result *= i;
+	}
+	cout << result << endl;
+
+	system("PAUSE");
+    return 0;
+}
