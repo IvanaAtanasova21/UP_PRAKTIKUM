@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int enteranumber;
+	cout << "Enter a number-";
+	cin >> enteranumber;
+	int ffirst = 0;
+	int fsecond = 1;
+	int fnext;
+	
+
+	for (int i = 0; i <= enteranumber; i++) {
+		cout << ffirst << endl;
+		fnext = ffirst + fsecond;
+		ffirst = fsecond;
+		fsecond = fnext;
+
+	}
+	cout << endl;
+
+    system("PAUSE");
+    return 0;
+}
