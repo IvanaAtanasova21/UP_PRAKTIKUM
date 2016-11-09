@@ -1,0 +1,27 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int n;
+	cout << "Enter a positive number-"; cin >> n;
+	char a;
+	cout << "Enter symbol a-"; cin >> a;
+	char b;
+	cout << "Enter symbol b-"; cin >> b;
+	
+	for (int i = 1; i < n; i++) {
+		for (int j = 0; j < i; j++) {
+			cout << a;
+		}
+		for (int j = n; j > i; j--) {
+			cout << b;
+		}
+		cout << endl;
+	 }
+
+		system("PAUSE");
+		return 0;
+	}
