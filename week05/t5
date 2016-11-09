@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int p, q;
+	cout << "p=" << ' ';
+	cin >> p;
+	cout << "q=" << ' ';
+	cin >> q;
+
+	if (p > q)
+		cout << "Enter p<q" << endl;
+	else
+	{
+		bool prime = true;
+		for (int i = p; i <= p; i++)
+		{
+			for (int j = 2; j < i && prime; j++)
+			{
+				if (i&j == 0)
+					prime = false;
+			}
+			if (prime == true)
+				cout << i << " ";
+			prime = true;
+		}
+	}
+
+	system("PAUSE");
+    return 0;
+}
