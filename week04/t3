@@ -12,10 +12,10 @@ int main()
 	int l = (n / 10) % 10;
 	int m = n % 10;
 
-	if (k*l*m >= 100)
+	if (k*l*m >= 100 && k*l*m<=999)
 		cout << "YES" << ' ' << (k*l*m - (k + l + m));
 	else
-		cout << "NO" << ' '<< k*l*m;
+		cout << "NO" << ' ' << k*l*m;
 
 
 	system("PAUSE");
