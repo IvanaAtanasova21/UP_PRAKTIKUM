@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int num;
+	cout << "Enter a number" << ' ';
+	cin >> num;
+	bool prime = true;
+	if (num <= 1)
+		prime = false;
+	else 
+		for (int i = 2; i < num && prime; i++) {
+			if (num%i == 0)
+				prime = false;
+		}
+	cout << (prime ? "prime" : "not prime") << endl;
+
+	system("PAUSE");
+    return 0;
+}
