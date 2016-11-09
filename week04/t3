@@ -1,0 +1,23 @@
+#include "stdafx.h"
+#include <iostream>
+using namespace std;
+
+
+int main()
+{
+	int n;
+	cout << "Enter a three-digit number" << ' ' << endl;
+	cin >> n;
+	int k = n / 100;
+	int l = (n / 10) % 10;
+	int m = n % 10;
+
+	if (k*l*m >= 100)
+		cout << "YES" << ' ' << (k*l*m - (k + l + m));
+	else
+		cout << "NO" << ' '<< k*l*m;
+
+
+	system("PAUSE");
+    return 0;
+}
